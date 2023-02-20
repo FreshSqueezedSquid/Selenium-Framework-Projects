@@ -42,6 +42,11 @@ class TestBestBuy(BaseClass):
         wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@id='firstName']")))
         guestPage.firstName().send_keys(getData["firstname"])
         time.sleep(1.2)
+        guestPage.lastName().send_keys(getData["lastname"])
+        wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#street")))
+        time.sleep(1)
+        guestPage.getAddress().send_keys(getData["address"])
+        guestPage.getCity().send_keys(getData["city"])
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
     @pytest.fixture(params=ShippingData.test_shipping_data)

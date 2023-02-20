@@ -27,7 +27,7 @@ class GuestPage:
         return self.driver.find_element(*GuestPage.lastname)
 
     def getAddress(self):
-        self.driver.find_element(GuestPage.address)
+        return self.driver.find_element(*GuestPage.address)
 
     def getCity(self):
         return self.driver.find_element(*GuestPage.city)

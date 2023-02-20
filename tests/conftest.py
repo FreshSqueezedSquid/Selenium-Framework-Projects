@@ -33,7 +33,7 @@ def setup(request):
     #driver.maximize_window()
     request.cls.driver = driver
     yield
-    #driver.close()
+    driver.close()
 
 
 @pytest.hookimpl(hookwrapper=True)

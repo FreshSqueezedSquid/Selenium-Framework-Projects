@@ -406,3 +406,248 @@
 2023-02-19 18:25:55,416 :INFO : test_printerPurchase :6360501
 2023-02-19 18:26:01,363 :INFO : test_printerPurchase :Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White
 2023-02-19 18:26:01,371 :INFO : test_printerPurchase :Item is in the cart
+2023-02-20 15:11:49,312 :INFO : test_printerPurchase :6470013
+2023-02-20 15:11:49,313 :INFO : test_printerPurchase :6470013
+2023-02-20 15:11:51,392 :INFO : test_printerPurchase :6469372
+2023-02-20 15:11:51,404 :INFO : test_printerPurchase :6469371
+2023-02-20 15:11:51,415 :INFO : test_printerPurchase :6470010
+2023-02-20 15:11:51,425 :INFO : test_printerPurchase :6470011
+2023-02-20 15:11:51,436 :INFO : test_printerPurchase :6470012
+2023-02-20 15:11:51,448 :INFO : test_printerPurchase :6492050
+2023-02-20 15:11:51,460 :INFO : test_printerPurchase :6459641
+2023-02-20 15:11:51,474 :INFO : test_printerPurchase :6459601
+2023-02-20 15:11:51,486 :INFO : test_printerPurchase :6459602
+2023-02-20 15:11:51,498 :INFO : test_printerPurchase :6397580
+2023-02-20 15:11:51,511 :INFO : test_printerPurchase :6360502
+2023-02-20 15:11:51,523 :INFO : test_printerPurchase :6360501
+2023-02-20 15:11:51,535 :INFO : test_printerPurchase :6405195
+2023-02-20 15:11:51,545 :INFO : test_printerPurchase :6397582
+2023-02-20 15:11:51,557 :INFO : test_printerPurchase :6397577
+2023-02-20 15:11:51,569 :INFO : test_printerPurchase :6360504
+2023-02-20 15:11:51,581 :INFO : test_printerPurchase :6525631
+2023-02-20 15:11:57,099 :INFO : test_printerPurchase :Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White
+2023-02-20 15:11:57,105 :INFO : test_printerPurchase :Item is in the cart
+2023-02-20 15:14:23,676 :INFO : test_printerPurchase :6470013
+2023-02-20 15:14:23,677 :INFO : test_printerPurchase :6470013
+2023-02-20 15:14:25,953 :INFO : test_printerPurchase :6469372
+2023-02-20 15:14:25,958 :INFO : test_printerPurchase :6469371
+2023-02-20 15:14:25,962 :INFO : test_printerPurchase :6470010
+2023-02-20 15:14:25,966 :INFO : test_printerPurchase :6470011
+2023-02-20 15:14:25,969 :INFO : test_printerPurchase :6470012
+2023-02-20 15:14:25,972 :INFO : test_printerPurchase :6492050
+2023-02-20 15:14:25,976 :INFO : test_printerPurchase :6459641
+2023-02-20 15:14:25,978 :INFO : test_printerPurchase :6459601
+2023-02-20 15:14:25,981 :INFO : test_printerPurchase :6459602
+2023-02-20 15:14:25,984 :INFO : test_printerPurchase :6397580
+2023-02-20 15:14:25,986 :INFO : test_printerPurchase :6360502
+2023-02-20 15:14:25,989 :INFO : test_printerPurchase :6360501
+2023-02-20 15:14:25,992 :INFO : test_printerPurchase :6405195
+2023-02-20 15:14:25,995 :INFO : test_printerPurchase :6397582
+2023-02-20 15:14:25,997 :INFO : test_printerPurchase :6397577
+2023-02-20 15:14:25,999 :INFO : test_printerPurchase :6360504
+2023-02-20 15:14:26,002 :INFO : test_printerPurchase :6525631
+2023-02-20 15:14:34,419 :INFO : test_printerPurchase :Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White
+2023-02-20 15:14:34,430 :INFO : test_printerPurchase :Item is in the cart
+2023-02-20 15:25:25,716 :INFO : test_printerPurchase :6470013
+2023-02-20 15:25:25,716 :INFO : test_printerPurchase :6470013
+2023-02-20 15:25:27,777 :INFO : test_printerPurchase :6469372
+2023-02-20 15:25:27,789 :INFO : test_printerPurchase :6469371
+2023-02-20 15:25:27,799 :INFO : test_printerPurchase :6470010
+2023-02-20 15:25:27,810 :INFO : test_printerPurchase :6470011
+2023-02-20 15:25:27,822 :INFO : test_printerPurchase :6470012
+2023-02-20 15:25:27,833 :INFO : test_printerPurchase :6492050
+2023-02-20 15:25:27,844 :INFO : test_printerPurchase :6459641
+2023-02-20 15:25:27,860 :INFO : test_printerPurchase :6459601
+2023-02-20 15:25:27,871 :INFO : test_printerPurchase :6459602
+2023-02-20 15:25:27,882 :INFO : test_printerPurchase :6397580
+2023-02-20 15:25:27,892 :INFO : test_printerPurchase :6360502
+2023-02-20 15:25:27,904 :INFO : test_printerPurchase :6360501
+2023-02-20 15:25:27,915 :INFO : test_printerPurchase :6405195
+2023-02-20 15:25:27,927 :INFO : test_printerPurchase :6397582
+2023-02-20 15:25:27,938 :INFO : test_printerPurchase :6397577
+2023-02-20 15:25:27,950 :INFO : test_printerPurchase :6360504
+2023-02-20 15:25:27,961 :INFO : test_printerPurchase :6525631
+2023-02-20 15:25:35,170 :INFO : test_printerPurchase :Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White
+2023-02-20 15:25:35,177 :INFO : test_printerPurchase :Item is in the cart
+2023-02-20 15:40:33,204 :INFO : test_printerPurchase :6470013
+2023-02-20 15:40:33,204 :INFO : test_printerPurchase :6470013
+2023-02-20 15:40:35,310 :INFO : test_printerPurchase :6469372
+2023-02-20 15:40:41,502 :INFO : test_printerPurchase :Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White
+2023-02-20 15:40:41,508 :INFO : test_printerPurchase :Item is in the cart
+2023-02-20 15:43:02,158 :INFO : test_printerPurchase :6470013
+2023-02-20 15:43:02,158 :INFO : test_printerPurchase :6470013
+2023-02-20 15:43:04,288 :INFO : test_printerPurchase :6469372
+2023-02-20 15:43:04,299 :INFO : test_printerPurchase :6469371
+2023-02-20 15:43:04,309 :INFO : test_printerPurchase :6470010
+2023-02-20 15:43:04,320 :INFO : test_printerPurchase :6470011
+2023-02-20 15:43:04,331 :INFO : test_printerPurchase :6470012
+2023-02-20 15:43:04,342 :INFO : test_printerPurchase :6492050
+2023-02-20 15:43:04,352 :INFO : test_printerPurchase :6459641
+2023-02-20 15:43:04,368 :INFO : test_printerPurchase :6459601
+2023-02-20 15:43:04,379 :INFO : test_printerPurchase :6459602
+2023-02-20 15:43:04,397 :INFO : test_printerPurchase :6405195
+2023-02-20 15:43:04,409 :INFO : test_printerPurchase :6397580
+2023-02-20 15:43:04,419 :INFO : test_printerPurchase :6360502
+2023-02-20 15:43:04,430 :INFO : test_printerPurchase :6360501
+2023-02-20 15:43:04,443 :INFO : test_printerPurchase :6397582
+2023-02-20 15:43:04,455 :INFO : test_printerPurchase :6397577
+2023-02-20 15:43:04,466 :INFO : test_printerPurchase :6360504
+2023-02-20 15:43:04,478 :INFO : test_printerPurchase :6525631
+2023-02-20 15:43:09,718 :INFO : test_printerPurchase :Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White
+2023-02-20 15:43:09,724 :INFO : test_printerPurchase :Item is in the cart
+2023-02-20 15:46:46,405 :INFO : test_printerPurchase :6470013
+2023-02-20 15:46:46,406 :INFO : test_printerPurchase :6470013
+2023-02-20 15:46:48,534 :INFO : test_printerPurchase :6469372
+2023-02-20 15:46:48,545 :INFO : test_printerPurchase :6469371
+2023-02-20 15:46:48,557 :INFO : test_printerPurchase :6470010
+2023-02-20 15:46:48,569 :INFO : test_printerPurchase :6470011
+2023-02-20 15:46:48,582 :INFO : test_printerPurchase :6470012
+2023-02-20 15:46:48,593 :INFO : test_printerPurchase :6492050
+2023-02-20 15:46:48,604 :INFO : test_printerPurchase :6459641
+2023-02-20 15:46:48,621 :INFO : test_printerPurchase :6459601
+2023-02-20 15:46:48,636 :INFO : test_printerPurchase :6459602
+2023-02-20 15:46:48,649 :INFO : test_printerPurchase :6405195
+2023-02-20 15:46:48,659 :INFO : test_printerPurchase :6397580
+2023-02-20 15:46:48,670 :INFO : test_printerPurchase :6360502
+2023-02-20 15:46:48,682 :INFO : test_printerPurchase :6360501
+2023-02-20 15:46:48,694 :INFO : test_printerPurchase :6397582
+2023-02-20 15:46:48,705 :INFO : test_printerPurchase :6397577
+2023-02-20 15:46:48,717 :INFO : test_printerPurchase :6360504
+2023-02-20 15:46:48,729 :INFO : test_printerPurchase :6525631
+2023-02-20 15:46:55,240 :INFO : test_printerPurchase :Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White
+2023-02-20 15:46:55,282 :INFO : test_printerPurchase :Item is in the cart
+2023-02-20 15:48:56,331 :INFO : test_printerPurchase :6470013
+2023-02-20 15:48:56,332 :INFO : test_printerPurchase :6470013
+2023-02-20 15:48:58,689 :INFO : test_printerPurchase :6469372
+2023-02-20 15:48:58,694 :INFO : test_printerPurchase :6469371
+2023-02-20 15:48:58,699 :INFO : test_printerPurchase :6470010
+2023-02-20 15:48:58,703 :INFO : test_printerPurchase :6470011
+2023-02-20 15:48:58,707 :INFO : test_printerPurchase :6470012
+2023-02-20 15:48:58,711 :INFO : test_printerPurchase :6492050
+2023-02-20 15:48:58,715 :INFO : test_printerPurchase :6459641
+2023-02-20 15:48:58,718 :INFO : test_printerPurchase :6459601
+2023-02-20 15:48:58,721 :INFO : test_printerPurchase :6459602
+2023-02-20 15:48:58,724 :INFO : test_printerPurchase :6405195
+2023-02-20 15:48:58,727 :INFO : test_printerPurchase :6397580
+2023-02-20 15:48:58,731 :INFO : test_printerPurchase :6360502
+2023-02-20 15:48:58,734 :INFO : test_printerPurchase :6360501
+2023-02-20 15:48:58,737 :INFO : test_printerPurchase :6397582
+2023-02-20 15:48:58,739 :INFO : test_printerPurchase :6397577
+2023-02-20 15:48:58,742 :INFO : test_printerPurchase :6360504
+2023-02-20 15:48:58,744 :INFO : test_printerPurchase :6525631
+2023-02-20 15:49:05,184 :INFO : test_printerPurchase :Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White
+2023-02-20 15:49:05,220 :INFO : test_printerPurchase :Item is in the cart
+2023-02-20 15:56:52,678 :INFO : test_printerPurchase :6470013
+2023-02-20 15:56:52,678 :INFO : test_printerPurchase :6470013
+2023-02-20 15:56:54,997 :INFO : test_printerPurchase :6469372
+2023-02-20 15:56:55,002 :INFO : test_printerPurchase :6469371
+2023-02-20 15:56:55,007 :INFO : test_printerPurchase :6470010
+2023-02-20 15:56:55,011 :INFO : test_printerPurchase :6470011
+2023-02-20 15:56:55,014 :INFO : test_printerPurchase :6470012
+2023-02-20 15:56:55,018 :INFO : test_printerPurchase :6492050
+2023-02-20 15:56:55,021 :INFO : test_printerPurchase :6459641
+2023-02-20 15:56:55,024 :INFO : test_printerPurchase :6459601
+2023-02-20 15:56:55,026 :INFO : test_printerPurchase :6459602
+2023-02-20 15:56:55,029 :INFO : test_printerPurchase :6405195
+2023-02-20 15:56:55,032 :INFO : test_printerPurchase :6397580
+2023-02-20 15:56:55,035 :INFO : test_printerPurchase :6360502
+2023-02-20 15:56:55,038 :INFO : test_printerPurchase :6360501
+2023-02-20 15:56:55,041 :INFO : test_printerPurchase :6397582
+2023-02-20 15:56:55,043 :INFO : test_printerPurchase :6397577
+2023-02-20 15:56:55,046 :INFO : test_printerPurchase :6360504
+2023-02-20 15:56:55,048 :INFO : test_printerPurchase :6525631
+2023-02-20 15:57:00,364 :INFO : test_printerPurchase :Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White
+2023-02-20 15:57:00,374 :INFO : test_printerPurchase :Item is in the cart
+2023-02-20 15:58:22,671 :INFO : test_printerPurchase :6470013
+2023-02-20 15:58:22,672 :INFO : test_printerPurchase :6470013
+2023-02-20 15:58:24,970 :INFO : test_printerPurchase :6469372
+2023-02-20 15:58:24,974 :INFO : test_printerPurchase :6469371
+2023-02-20 15:58:24,990 :INFO : test_printerPurchase :6470010
+2023-02-20 15:58:24,994 :INFO : test_printerPurchase :6470011
+2023-02-20 15:58:24,997 :INFO : test_printerPurchase :6470012
+2023-02-20 15:58:25,001 :INFO : test_printerPurchase :6492050
+2023-02-20 15:58:25,004 :INFO : test_printerPurchase :6459641
+2023-02-20 15:58:25,007 :INFO : test_printerPurchase :6459601
+2023-02-20 15:58:25,009 :INFO : test_printerPurchase :6459602
+2023-02-20 15:58:25,012 :INFO : test_printerPurchase :6405195
+2023-02-20 15:58:25,015 :INFO : test_printerPurchase :6397580
+2023-02-20 15:58:25,019 :INFO : test_printerPurchase :6360502
+2023-02-20 15:58:25,021 :INFO : test_printerPurchase :6360501
+2023-02-20 15:58:25,024 :INFO : test_printerPurchase :6397582
+2023-02-20 15:58:25,026 :INFO : test_printerPurchase :6397577
+2023-02-20 15:58:25,028 :INFO : test_printerPurchase :6360504
+2023-02-20 15:58:25,031 :INFO : test_printerPurchase :6525631
+2023-02-20 15:58:31,640 :INFO : test_printerPurchase :Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White
+2023-02-20 15:58:31,678 :INFO : test_printerPurchase :Item is in the cart
+2023-02-20 15:59:32,995 :INFO : test_printerPurchase :6470013
+2023-02-20 15:59:32,995 :INFO : test_printerPurchase :6470013
+2023-02-20 15:59:35,245 :INFO : test_printerPurchase :6469372
+2023-02-20 15:59:35,251 :INFO : test_printerPurchase :6469371
+2023-02-20 15:59:35,257 :INFO : test_printerPurchase :6470010
+2023-02-20 15:59:35,262 :INFO : test_printerPurchase :6470011
+2023-02-20 15:59:35,267 :INFO : test_printerPurchase :6470012
+2023-02-20 15:59:35,272 :INFO : test_printerPurchase :6492050
+2023-02-20 15:59:35,276 :INFO : test_printerPurchase :6459641
+2023-02-20 15:59:35,279 :INFO : test_printerPurchase :6459601
+2023-02-20 15:59:35,282 :INFO : test_printerPurchase :6459602
+2023-02-20 15:59:35,286 :INFO : test_printerPurchase :6405195
+2023-02-20 15:59:35,289 :INFO : test_printerPurchase :6397580
+2023-02-20 15:59:35,291 :INFO : test_printerPurchase :6360502
+2023-02-20 15:59:35,294 :INFO : test_printerPurchase :6360501
+2023-02-20 15:59:35,296 :INFO : test_printerPurchase :6397582
+2023-02-20 15:59:35,299 :INFO : test_printerPurchase :6397577
+2023-02-20 15:59:35,302 :INFO : test_printerPurchase :6360504
+2023-02-20 15:59:35,304 :INFO : test_printerPurchase :6525631
+2023-02-20 15:59:42,321 :INFO : test_printerPurchase :Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White
+2023-02-20 15:59:42,348 :INFO : test_printerPurchase :Item is in the cart
+2023-02-20 16:02:29,715 :INFO : test_printerPurchase :6470013
+2023-02-20 16:02:29,715 :INFO : test_printerPurchase :6470013
+2023-02-20 16:02:31,975 :INFO : test_printerPurchase :6469372
+2023-02-20 16:02:31,978 :INFO : test_printerPurchase :6469371
+2023-02-20 16:02:31,982 :INFO : test_printerPurchase :6470010
+2023-02-20 16:02:31,985 :INFO : test_printerPurchase :6470011
+2023-02-20 16:02:31,988 :INFO : test_printerPurchase :6470012
+2023-02-20 16:02:31,991 :INFO : test_printerPurchase :6492050
+2023-02-20 16:02:31,994 :INFO : test_printerPurchase :6459641
+2023-02-20 16:02:31,997 :INFO : test_printerPurchase :6459601
+2023-02-20 16:02:32,000 :INFO : test_printerPurchase :6459602
+2023-02-20 16:02:32,003 :INFO : test_printerPurchase :6405195
+2023-02-20 16:02:32,006 :INFO : test_printerPurchase :6397580
+2023-02-20 16:02:32,009 :INFO : test_printerPurchase :6360502
+2023-02-20 16:02:32,013 :INFO : test_printerPurchase :6360501
+2023-02-20 16:02:32,017 :INFO : test_printerPurchase :6397582
+2023-02-20 16:02:32,020 :INFO : test_printerPurchase :6397577
+2023-02-20 16:02:32,022 :INFO : test_printerPurchase :6360504
+2023-02-20 16:02:32,024 :INFO : test_printerPurchase :6525631
+2023-02-20 16:02:38,543 :INFO : test_printerPurchase :Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White
+2023-02-20 16:02:38,571 :INFO : test_printerPurchase :Item is in the cart
+2023-02-20 16:06:34,500 :INFO : test_printerPurchase :6470013
+2023-02-20 16:06:34,500 :INFO : test_printerPurchase :6470013
+2023-02-20 16:06:36,763 :INFO : test_printerPurchase :6469372
+2023-02-20 16:06:36,770 :INFO : test_printerPurchase :6469371
+2023-02-20 16:06:36,773 :INFO : test_printerPurchase :6470010
+2023-02-20 16:06:36,776 :INFO : test_printerPurchase :6470011
+2023-02-20 16:06:36,779 :INFO : test_printerPurchase :6470012
+2023-02-20 16:06:36,782 :INFO : test_printerPurchase :6492050
+2023-02-20 16:06:36,785 :INFO : test_printerPurchase :6459641
+2023-02-20 16:06:36,788 :INFO : test_printerPurchase :6459601
+2023-02-20 16:06:36,791 :INFO : test_printerPurchase :6459602
+2023-02-20 16:06:36,794 :INFO : test_printerPurchase :6405195
+2023-02-20 16:06:36,796 :INFO : test_printerPurchase :6397580
+2023-02-20 16:06:36,800 :INFO : test_printerPurchase :6360502
+2023-02-20 16:06:36,802 :INFO : test_printerPurchase :6360501
+2023-02-20 16:06:36,805 :INFO : test_printerPurchase :6397582
+2023-02-20 16:06:36,807 :INFO : test_printerPurchase :6397577
+2023-02-20 16:06:36,810 :INFO : test_printerPurchase :6360504
+2023-02-20 16:06:36,812 :INFO : test_printerPurchase :6525631
+2023-02-20 16:06:42,488 :INFO : test_printerPurchase :Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White
+2023-02-20 16:06:42,513 :INFO : test_printerPurchase :Item is in the cart
+2023-02-20 16:15:21,528 :INFO : test_printerPurchase :6470013
+2023-02-20 16:15:21,529 :INFO : test_printerPurchase :6470013
+2023-02-20 16:15:23,630 :INFO : test_printerPurchase :6469372
+2023-02-20 16:15:23,642 :INFO : test_printerPurchase :6469371
+2023-02-20 16:15:23,653 :INFO : test_printerPurchase :6470010
+2023-02-20 16:15:23,669 :INFO : test_printerPurchase :6470011
+2023-02-20 16:15:23,681 :INFO : test_printerPurchase :6470012
+2023-02-20 16:15:29,979 :INFO : test_printerPurchase :Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White
+2023-02-20 16:15:29,987 :INFO : test_printerPurchase :Item is in the cart
