@@ -1,0 +1,4 @@
+{
+  "tests/test_BestBuy.py::Test1::test_printerPurchase": true,
+  "tests/test_BestBuy.py": true
+}
