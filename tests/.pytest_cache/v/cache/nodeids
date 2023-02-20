@@ -1,0 +1,6 @@
+[
+  "test_BestBuy.py::TestBestBuy::test_printerPurchase",
+  "test_BestBuy.py::TestBestBuy::test_printerPurchase[getData0-Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White]",
+  "test_BestBuy.py::TestBestBuy::test_printerPurchase[getData0]",
+  "test_BestBuy.py::TestBestBuy::test_printerPurchase[getData1]"
+]

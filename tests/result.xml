@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="33.771" timestamp="2023-02-15T11:18:32.498131" hostname="Zacharys-Air"><testcase classname="test_BestBuy.TestBestBuy" name="test_printerPurchase" time="33.752" /></testsuite></testsuites>
