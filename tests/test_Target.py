@@ -59,6 +59,7 @@ class TestTarget(BaseClass):
         checkoutPage.sendEmail().send_keys(loginData["email"])
         wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#password")))
         time.sleep(3)
+        log.info("Sending password now")
         checkoutPage.sendPassword().send_keys(loginData["password"])
         wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#login")))
         time.sleep(1)
