@@ -1,6 +1,7 @@
 import time
 import pytest
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from TestData.shippingData import ShippingData
@@ -47,7 +48,18 @@ class TestBestBuy(BaseClass):
         time.sleep(1)
         guestPage.getAddress().send_keys(getData["address"])
         guestPage.getCity().send_keys(getData["city"])
+
+        dropdown = Select(self.driver.find_element(By.CSS_SELECTOR, "#state"))
+        dropdown.select_by_visible_text("AZ")
+
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
+        guestPage.zipCode().send_keys(getData["zip_code"])
+        time.sleep(2)
+        guestPage.applyDetails().click()
+
+        guestPage.getEmail().send_keys(getData["email"])
+        guestPage.phoneNumber().send_keys(getData["phone_num"])
 
     @pytest.fixture(params=ShippingData.test_shipping_data)
     def getData(self, request):

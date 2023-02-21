@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa5c063a-6787-4546-aded-f10436e2550e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" beforeDir="false" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pageObjects/GuestPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/GuestPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logfile.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_BestBuy.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_BestBuy.py" afterDir="false" />

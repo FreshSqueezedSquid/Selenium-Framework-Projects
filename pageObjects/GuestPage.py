@@ -11,10 +11,11 @@ class GuestPage:
     lastname = (By.XPATH, "//input[@id='lastName']")
     address = (By.CSS_SELECTOR, "#street")
     city = (By.CSS_SELECTOR, "#city")
+    state = (By.CSS_SELECTOR, "#state")
     zipcode = (By.CSS_SELECTOR, "#zipcode")
+    apply_details = (By.XPATH, " //button[@class='c-button c-button-secondary c-button-md new-address-form__button']")
     email = (By.XPATH, "//input[@id='user.emailAddress']")
     phone_num = (By.XPATH, "//input[@id='user.phone']")
-    apply_details = (By.XPATH, " //button[@class='c-button c-button-secondary c-button-md new-address-form__button']")
     continue_to_payment = (By.XPATH, "//button[@class='btn btn-lg btn-block btn-secondary']")
 
     def guestLogin(self):
@@ -35,3 +36,15 @@ class GuestPage:
 
     def zipCode(self):
         return self.driver.find_element(*GuestPage.zipcode)
+
+    def applyDetails(self):
+        return self.driver.find_element(*GuestPage.apply_details)
+
+    def getEmail(self):
+        return self.driver.find_element(*GuestPage.email)
+
+    def phoneNumber(self):
+        return self.driver.find_element(*GuestPage.phone_num)
+
+    def continuePayment(self):
+        return self.driver.find_element(*GuestPage.continue_to_payment)
