@@ -1,5 +1,3 @@
 {
-  "tests/test_BestBuy.py::Test1::test_printerPurchase": true,
-  "tests/test_BestBuy.py::TestBestBuy": true,
-  "tests/test_BestBuy.py::TestBestBuy::test_printerPurchase[getData0]": true
+  "tests/test_BestBuy.py::Test1::test_printerPurchase": true
 }
