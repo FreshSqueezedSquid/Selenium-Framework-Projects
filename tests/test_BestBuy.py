@@ -54,6 +54,7 @@ class TestBestBuy(BaseClass):
         guestPage.zipCode().send_keys(getData["zip_code"])
         time.sleep(2)
         guestPage.applyDetails().click()
+        time.sleep(2)
         # scrolls to bottom of page to access final inputs and button
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         guestPage.getEmail().send_keys(getData["email"])

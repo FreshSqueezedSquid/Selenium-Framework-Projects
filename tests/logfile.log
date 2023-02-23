@@ -718,3 +718,41 @@
 2023-02-21 14:08:13,080 :INFO : test_printerPurchase :6397577
 2023-02-21 14:08:19,965 :INFO : test_printerPurchase :Epson - EcoTank ET-2850 All-in-One Supertank Inkjet Printer - White
 2023-02-21 14:08:20,001 :INFO : test_printerPurchase :Item is in the cart
+2023-02-22 14:18:16,540 :INFO : test_printerPurchase :4900964
+2023-02-22 14:18:16,541 :INFO : test_printerPurchase :4900964
+2023-02-22 14:18:18,842 :INFO : test_printerPurchase :6520581
+2023-02-22 14:18:18,849 :INFO : test_printerPurchase :6376551
+2023-02-22 14:18:18,855 :INFO : test_printerPurchase :6084400
+2023-02-22 14:18:25,878 :INFO : test_printerPurchase :Apple - AirPods Pro (2nd generation) - White
+2023-02-22 14:18:25,904 :INFO : test_printerPurchase :Item is in the cart
+2023-02-22 14:20:09,157 :INFO : test_printerPurchase :4900964
+2023-02-22 14:20:09,157 :INFO : test_printerPurchase :4900964
+2023-02-22 14:20:11,473 :INFO : test_printerPurchase :6520581
+2023-02-22 14:20:11,478 :INFO : test_printerPurchase :6376551
+2023-02-22 14:20:11,485 :INFO : test_printerPurchase :6084400
+2023-02-22 14:20:19,499 :INFO : test_printerPurchase :Apple - AirPods Pro (2nd generation) - White
+2023-02-22 14:20:19,549 :INFO : test_printerPurchase :Item is in the cart
+2023-02-22 14:33:49,797 :INFO : test_printerPurchase :4900964
+2023-02-22 14:33:49,798 :INFO : test_printerPurchase :4900964
+2023-02-22 14:33:52,080 :INFO : test_printerPurchase :6520581
+2023-02-22 14:33:52,085 :INFO : test_printerPurchase :6376551
+2023-02-22 14:33:52,091 :INFO : test_printerPurchase :6084400
+2023-02-22 14:35:01,184 :INFO : test_printerPurchase :4900964
+2023-02-22 14:35:01,184 :INFO : test_printerPurchase :4900964
+2023-02-22 14:35:03,495 :INFO : test_printerPurchase :6520581
+2023-02-22 14:35:03,500 :INFO : test_printerPurchase :6376551
+2023-02-22 14:35:03,504 :INFO : test_printerPurchase :6084400
+2023-02-22 14:37:20,826 :INFO : test_printerPurchase :4900964
+2023-02-22 14:37:20,826 :INFO : test_printerPurchase :4900964
+2023-02-22 14:37:23,145 :INFO : test_printerPurchase :6520581
+2023-02-22 14:37:23,151 :INFO : test_printerPurchase :6376551
+2023-02-22 14:37:23,156 :INFO : test_printerPurchase :6084400
+2023-02-22 14:37:29,671 :INFO : test_printerPurchase :Apple - AirPods Pro (2nd generation) - White
+2023-02-22 14:37:29,709 :INFO : test_printerPurchase :Item is in the cart
+2023-02-22 14:38:57,115 :INFO : test_printerPurchase :4900964
+2023-02-22 14:38:57,116 :INFO : test_printerPurchase :4900964
+2023-02-22 14:38:59,403 :INFO : test_printerPurchase :6520581
+2023-02-22 14:38:59,408 :INFO : test_printerPurchase :6376551
+2023-02-22 14:38:59,413 :INFO : test_printerPurchase :6084400
+2023-02-22 14:39:06,753 :INFO : test_printerPurchase :Apple - AirPods Pro (2nd generation) - White
+2023-02-22 14:39:06,786 :INFO : test_printerPurchase :Item is in the cart
