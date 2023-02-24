@@ -1,0 +1,30 @@
+2023-02-23 15:22:57,938 :INFO : test_flightBooking :Moving to login page
+2023-02-23 16:08:15,595 :INFO : test_flightBooking :Moving to login page
+2023-02-23 16:28:30,559 :INFO : test_flightBooking :Moving to login page
+2023-02-23 16:28:35,133 :INFO : test_flightBooking :switching driver to next page
+2023-02-23 16:29:28,359 :INFO : test_flightBooking :Moving to login page
+2023-02-23 16:29:31,150 :INFO : test_flightBooking :switching driver to next page
+2023-02-23 16:30:52,445 :INFO : test_flightBooking :Moving to login page
+2023-02-23 16:30:53,950 :INFO : test_flightBooking :switching driver to next page
+2023-02-23 16:31:25,080 :INFO : test_flightBooking :Moving to login page
+2023-02-23 16:31:26,585 :INFO : test_flightBooking :switching driver to next page
+2023-02-23 16:32:48,579 :INFO : test_flightBooking :Moving to login page
+2023-02-23 16:32:50,084 :INFO : test_flightBooking :switching driver to next page
+2023-02-23 16:33:15,191 :INFO : test_flightBooking :Moving to login page
+2023-02-23 16:33:16,696 :INFO : test_flightBooking :switching driver to next page
+2023-02-23 16:33:18,711 :INFO : test_flightBooking :Now on flight finder page
+2023-02-23 16:36:12,492 :INFO : test_flightBooking :Moving to login page
+2023-02-23 16:36:13,995 :INFO : test_flightBooking :switching driver to next page
+2023-02-23 16:36:16,012 :INFO : test_flightBooking :Now on flight finder page
+2023-02-23 16:36:39,415 :INFO : test_flightBooking :Moving to login page
+2023-02-23 16:36:40,921 :INFO : test_flightBooking :switching driver to next page
+2023-02-23 16:36:42,945 :INFO : test_flightBooking :Now on flight finder page
+2023-02-23 16:55:20,073 :INFO : test_flightBooking :Moving to login page
+2023-02-23 16:55:24,510 :INFO : test_flightBooking :switching driver to next page
+2023-02-23 16:55:27,154 :INFO : test_flightBooking :Now on flight finder page
+2023-02-23 16:58:52,521 :INFO : test_flightBooking :Moving to login page
+2023-02-23 16:58:57,796 :INFO : test_flightBooking :switching driver to next page
+2023-02-23 16:59:00,642 :INFO : test_flightBooking :Now on flight finder page
+2023-02-23 16:59:35,076 :INFO : test_flightBooking :Moving to login page
+2023-02-23 16:59:40,114 :INFO : test_flightBooking :switching driver to next page
+2023-02-23 16:59:43,027 :INFO : test_flightBooking :Now on flight finder page
