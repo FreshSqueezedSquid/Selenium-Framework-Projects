@@ -39,14 +39,15 @@ class TestAA(BaseClass):
         selectFlightPage = flightFinderPage.selectFlight()
         # checks to see if the page is taking extra time to load
         try:
-            elem = self.driver.find_element(By.CSS_SELECTOR, ".message_text")
-            if elem.text.is_displayed():
+            elem = self.driver.find_element(By.XPATH, "(//img[@alt='American Airlines - homepage'])[1]")
+            if not elem.is_displayed():
                 log.info("Waiting for page to load")
+                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#aa-pageTitle")))
 
         except NoSuchElementException:
-            log.info("No pop-up detected")
-            wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#aa-pageTitle")))
+            log.info("Page loading normally")
 
+        time.sleep(1)
         # closes tool-tip/info pop-up so as not to block available flights to click
         try:
             elem = self.driver.find_element(By.XPATH, "(//button[@id='closeTooltip'])[1]")
@@ -62,15 +63,16 @@ class TestAA(BaseClass):
         try:
             elem = self.driver.find_element(By.CSS_SELECTOR, "#flight0-product1")
             if elem.is_displayed():
-                elem.click()  # this will click the element if it is there
                 log.info("Alt CSS id detected")
+                elem.click()  # this will click the element if it is there
 
         except NoSuchElementException:
             log.info("No alt id detected")
             selectFlightPage.lowestDepartPrice().click()
-            wait.until(EC.presence_of_element_located((By.XPATH, "(//div[@class='row flight-matrix'])[1]")))
+
         # scrolls down so cheapest return flight options are visible
         self.scrollDown()
+        wait.until(EC.presence_of_element_located((By.XPATH, "(//div[@class='row flight-matrix'])[1]")))
 
         # AA.com can give 2 different ways of identifying flight choices...this try/except block accounts for that
         try:
@@ -91,13 +93,19 @@ class TestAA(BaseClass):
         wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#button_continue_guest")))
         bookFlight = selectFlightPage.guestLogin()
 
+        # Booking flight by entering passenger information
         self.scrollDown()
+        log.info("Entering firstname/lastname")
         bookFlight.firstName().send_keys(getData["firstname"])
         bookFlight.lastName().send_keys(getData["lastname"])
         self.scrollDown()
+        log.info("Entering month/day/year")
         bookFlight.monthDropdown().select_by_index(1)
         bookFlight.dayDropdown().select_by_index(27)
         bookFlight.yearDropdown().select_by_index(30)
+        bookFlight.genderDropdown().select_by_index(0)
+        bookFlight.regionDropdown().select_by_index(0)
+        self.scrollDown()
 
 
 

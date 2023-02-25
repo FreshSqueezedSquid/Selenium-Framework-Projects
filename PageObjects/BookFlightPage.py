@@ -38,17 +38,17 @@ class BookFlight:
     def yearDropdown(self):
         return Select(self.driver.find_element(*BookFlight.year_dropdown))
 
-    def gender_dropdown(self):
-        return self.driver.find_element(*BookFlight.gender_dropdown)
+    def genderDropdown(self):
+        return Select(self.driver.find_element(*BookFlight.gender_dropdown))
 
     def regionDropdown(self):
-        return self.driver.find_element(*BookFlight.region_dropdown)
+        return Select(self.driver.find_element(*BookFlight.region_dropdown))
 
     def getEmail(self):
         return self.driver.find_element(*BookFlight.email)
 
     def codeDropdown(self):
-        return self.driver.find_element(*BookFlight.country_code_dropdown)
+        return Select(self.driver.find_element(*BookFlight.country_code_dropdown))
 
     def phoneNum(self):
         return self.driver.find_element(*BookFlight.phone_num)
