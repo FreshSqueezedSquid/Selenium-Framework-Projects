@@ -47,7 +47,7 @@ class TestAA(BaseClass):
         except NoSuchElementException:
             log.info("Page loading normally")
 
-        time.sleep(1)
+        time.sleep(3)
         # closes tool-tip/info pop-up so as not to block available flights to click
         try:
             elem = self.driver.find_element(By.XPATH, "(//button[@id='closeTooltip'])[1]")
@@ -56,8 +56,6 @@ class TestAA(BaseClass):
                 log.info("Tool-tip encountered and closed")
         except NoSuchElementException:
             log.info("No tool-tip encountered")
-
-        time.sleep(3)
 
         # AA.com can give 2 different ways of identifying flight choices...this try/except block accounts for that
         try:
@@ -87,7 +85,7 @@ class TestAA(BaseClass):
 
         wait.until(EC.element_to_be_clickable(selectFlightPage.statusPref()))
         selectFlightPage.statusPref().click()
-        # ^^^^^may need to add an if statement here to accoutn for when this status check shows up??
+
         time.sleep(3)
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#button_continue_guest")))
@@ -105,7 +103,10 @@ class TestAA(BaseClass):
         bookFlight.yearDropdown().select_by_index(30)
         bookFlight.genderDropdown().select_by_index(0)
         bookFlight.regionDropdown().select_by_index(0)
+        time.sleep(1.5)
         self.scrollDown()
+        wait.until(EC.element_to_be_clickable(bookFlight.getEmail()))
+        bookFlight.getEmail().send_keys(getData["email"])
 
 
 

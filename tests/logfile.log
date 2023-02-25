@@ -373,3 +373,26 @@
 2023-02-25 14:40:34,170 :INFO : test_flightBooking :No alt id detected
 2023-02-25 14:40:42,361 :INFO : test_flightBooking :Entering firstname/lastname
 2023-02-25 14:40:42,442 :INFO : test_flightBooking :Entering month/day/year
+2023-02-25 15:02:25,522 :INFO : test_flightBooking :Cookie warning encountered and closed
+2023-02-25 15:02:35,899 :INFO : test_flightBooking :Page loading normally
+2023-02-25 15:02:43,917 :INFO : test_flightBooking :No tool-tip encountered
+2023-02-25 15:03:06,283 :INFO : test_flightBooking :No alt id detected
+2023-02-25 15:04:05,790 :INFO : test_flightBooking :Cookie warning encountered and closed
+2023-02-25 15:04:16,162 :INFO : test_flightBooking :Page loading normally
+2023-02-25 15:04:25,232 :INFO : test_flightBooking :No tool-tip encountered
+2023-02-25 15:04:44,152 :INFO : test_flightBooking :Alt CSS id detected
+2023-02-25 15:06:48,801 :INFO : test_flightBooking :Cookie warning encountered and closed
+2023-02-25 15:06:59,212 :INFO : test_flightBooking :Page loading normally
+2023-02-25 15:07:08,283 :INFO : test_flightBooking :No tool-tip encountered
+2023-02-25 15:07:29,017 :INFO : test_flightBooking :No alt id detected
+2023-02-25 15:08:28,040 :INFO : test_flightBooking :Cookie warning encountered and closed
+2023-02-25 15:08:38,430 :INFO : test_flightBooking :Page loading normally
+2023-02-25 15:08:49,444 :INFO : test_flightBooking :No tool-tip encountered
+2023-02-25 15:09:10,055 :INFO : test_flightBooking :No alt id detected
+2023-02-25 15:11:02,867 :INFO : test_flightBooking :Cookie warning encountered and closed
+2023-02-25 15:11:13,308 :INFO : test_flightBooking :Page loading normally
+2023-02-25 15:11:23,370 :INFO : test_flightBooking :No tool-tip encountered
+2023-02-25 15:11:30,428 :INFO : test_flightBooking :No alt id detected
+2023-02-25 15:11:44,865 :INFO : test_flightBooking :No alt id detected
+2023-02-25 15:11:52,838 :INFO : test_flightBooking :Entering firstname/lastname
+2023-02-25 15:11:52,957 :INFO : test_flightBooking :Entering month/day/year
