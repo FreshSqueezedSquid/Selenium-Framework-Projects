@@ -14,7 +14,7 @@ class TestAA(BaseClass):
     def test_flightBooking(self, getData):
 
         log = self.getLog()
-        wait = WebDriverWait(self.driver, 45)
+        wait = WebDriverWait(self.driver, 100)
 
         flightFinderPage = FlightFinder(self.driver)
         time.sleep(3)
