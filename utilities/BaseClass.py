@@ -14,7 +14,7 @@ class BaseClass:
         self.driver.execute_script("window.scrollTo(0, document.body.scrollTop);")
 
     def scrollDown(self):
-        self.driver.execute_script("window.scrollTo(0, 200);")
+        self.driver.execute_script("window.scrollTo(0, 300);")
 
     def getLog(self):
         loggerName = inspect.stack()[1][3]  # Gets the name of the class / method from where this method is called

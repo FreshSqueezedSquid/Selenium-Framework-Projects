@@ -29,11 +29,11 @@ def setup(request):
 
     driver.get("https://www.americanairlines.com/")
     driver.maximize_window()
-    driver.delete_all_cookies()
-    driver.implicitly_wait(40)
+    driver.implicitly_wait(7)
     driver.set_page_load_timeout(15)
     request.cls.driver = driver
     yield
+    driver.delete_all_cookies()
     driver.close()
 
 
