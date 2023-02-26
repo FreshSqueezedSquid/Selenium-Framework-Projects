@@ -38,16 +38,15 @@ class TestAA(BaseClass):
         wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@id='flightSearchForm.button.reSubmit']")))
         selectFlightPage = flightFinderPage.selectFlight()
         # checks to see if the page is taking extra time to load
+        time.sleep(3)
         try:
-            elem = self.driver.find_element(By.XPATH, "(//img[@alt='American Airlines - homepage'])[1]")
-            if not elem.is_displayed():
+            elem = self.driver.find_element(By.CSS_SELECTOR, "#sec-text-container")
+            if elem.is_displayed():
                 log.info("Waiting for page to load")
-                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#aa-pageTitle")))
+                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#aa-search-field")))
 
         except NoSuchElementException:
             log.info("Page loading normally")
-
-        time.sleep(3)
         # closes tool-tip/info pop-up so as not to block available flights to click
         try:
             elem = self.driver.find_element(By.XPATH, "(//button[@id='closeTooltip'])[1]")
@@ -56,7 +55,7 @@ class TestAA(BaseClass):
                 log.info("Tool-tip encountered and closed")
         except NoSuchElementException:
             log.info("No tool-tip encountered")
-
+        time.sleep(3)
         # AA.com can give 2 different ways of identifying flight choices...this try/except block accounts for that
         try:
             elem = self.driver.find_element(By.CSS_SELECTOR, "#flight0-product1")
