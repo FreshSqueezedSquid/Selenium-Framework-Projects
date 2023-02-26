@@ -14,7 +14,7 @@ class TestAA(BaseClass):
     def test_flightBooking(self, getData):
 
         log = self.getLog()
-        wait = WebDriverWait(self.driver, 100)
+        wait = WebDriverWait(self.driver, 45)
 
         flightFinderPage = FlightFinder(self.driver)
         time.sleep(3)
@@ -56,32 +56,34 @@ class TestAA(BaseClass):
         except NoSuchElementException:
             log.info("No tool-tip encountered")
         time.sleep(3)
+
         # AA.com can give 2 different ways of identifying flight choices...this try/except block accounts for that
         try:
-            elem = self.driver.find_element(By.CSS_SELECTOR, "#flight0-product1")
+            elem = selectFlightPage.lowestDepartPrice()
             if elem.is_displayed():
-                log.info("Alt CSS id detected")
                 elem.click()  # this will click the element if it is there
+                log.info("No alt id detected")
 
         except NoSuchElementException:
-            log.info("No alt id detected")
-            selectFlightPage.lowestDepartPrice().click()
+            self.driver.find_element(By.CSS_SELECTOR, "#flight0-product1").click()
+            log.info("Alt CSS id detected")
+        time.sleep(4)
 
         # scrolls down so cheapest return flight options are visible
         self.scrollDown()
-        wait.until(EC.presence_of_element_located((By.XPATH, "(//div[@class='row flight-matrix'])[1]")))
 
         # AA.com can give 2 different ways of identifying flight choices...this try/except block accounts for that
         try:
-            elem = self.driver.find_element(By.CSS_SELECTOR,  "#flight0-product0")
+            elem = selectFlightPage.lowestReturnPrice()
             if elem.is_displayed():
                 elem.click()  # this will click the element if it is there
-                log.info("Alt CSS id detected")
+                log.info("No alt id detected")
 
         except NoSuchElementException:
-            log.info("No alt id detected")
-            selectFlightPage.lowestReturnPrice().click()
+            self.driver.find_element(By.CSS_SELECTOR, "#flight0-product0").click()
+            log.info("Alt CSS id detected")
 
+        time.sleep(2)
         wait.until(EC.element_to_be_clickable(selectFlightPage.statusPref()))
         selectFlightPage.statusPref().click()
 
@@ -97,22 +99,22 @@ class TestAA(BaseClass):
         bookFlight.lastName().send_keys(getData["lastname"])
         self.scrollDown()
         log.info("Entering month/day/year")
-        bookFlight.monthDropdown().select_by_index(1)
-        bookFlight.dayDropdown().select_by_index(27)
-        bookFlight.yearDropdown().select_by_index(30)
-        bookFlight.genderDropdown().select_by_index(0)
-        bookFlight.regionDropdown().select_by_index(0)
+        bookFlight.monthDropdown().select_by_index(2)  # selects 'February'
+        bookFlight.dayDropdown().select_by_index(28)   # selects '28'
+        bookFlight.yearDropdown().select_by_index(32)  # selects '1992'
+        bookFlight.genderDropdown().select_by_index(0) # selects 'Male'
+        bookFlight.regionDropdown().select_by_index(0) # selects 'US'
         time.sleep(1.5)
         self.scrollDown()
         wait.until(EC.element_to_be_clickable(bookFlight.getEmail()))
         bookFlight.getEmail().send_keys(getData["email"])
-
-
-
-
-
-
-
+        bookFlight.confEmail().send_keys(getData["email"])
+        bookFlight.codeDropdown().select_by_index(1)   # selects 'United States +1'
+        #self.takeScreenshot()
+        bookFlight.phoneNum().send_keys(getData["phone_num"])
+        self.scrollDown()
+        time.sleep(1)
+        bookFlight.passengerButton().click()
 
 
 

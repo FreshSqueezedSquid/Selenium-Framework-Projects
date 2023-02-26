@@ -16,7 +16,7 @@ class BookFlight:
     region_dropdown = (By.XPATH, "//select[@id='passengers0.residencyInfo.country']")
     email = (By.XPATH, "//input[@id='tripContact.email']")
     conf_email = (By.XPATH, "//input[@id='confirmEmail']")
-    country_code_dropdown = (By.XPATH, "//div[@class='selectbox-overlay']")
+    country_code_dropdown = (By.XPATH, "//select[@id='tripContact.phones0.countryCode']")
     phone_num = (By.XPATH, "//input[@id='tripContact.phones0.number']")
     passenger_button = (By.XPATH, "//button[@id='passenger_button']")
 
@@ -45,6 +45,9 @@ class BookFlight:
         return Select(self.driver.find_element(*BookFlight.region_dropdown))
 
     def getEmail(self):
+        return self.driver.find_element(*BookFlight.conf_email)
+
+    def confEmail(self):
         return self.driver.find_element(*BookFlight.email)
 
     def codeDropdown(self):

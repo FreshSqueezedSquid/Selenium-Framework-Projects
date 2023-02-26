@@ -1,6 +1,7 @@
 import inspect
 import logging
 import time
+import pyautogui
 import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -15,6 +16,9 @@ class BaseClass:
 
     def scrollDown(self):
         self.driver.execute_script("window.scrollTo(0, 300);")
+
+    def takeScreenshot(self):
+        self.driver.save_screenshot('screenshot.png')
 
     def getLog(self):
         loggerName = inspect.stack()[1][3]  # Gets the name of the class / method from where this method is called
