@@ -670,3 +670,30 @@
 2023-02-26 13:40:20,636 :INFO : test_flightBooking :No alt id detected
 2023-02-26 13:40:29,097 :INFO : test_flightBooking :Entering firstname/lastname
 2023-02-26 13:40:29,351 :INFO : test_flightBooking :Entering month/day/year
+2023-02-26 17:59:15,657 :INFO : test_flightBooking :Cookie warning encountered and closed
+2023-02-26 17:59:22,088 :INFO : test_flightBooking :Waiting for page to load
+2023-02-26 17:59:53,402 :INFO : test_flightBooking :No tool-tip encountered
+2023-02-26 18:00:03,514 :INFO : test_flightBooking :Alt CSS id detected
+2023-02-26 18:00:14,913 :INFO : test_flightBooking :Alt CSS id detected
+2023-02-26 19:21:29,095 :INFO : test_flightBooking :Cookie warning encountered and closed
+2023-02-26 19:21:35,559 :INFO : test_flightBooking :Waiting for page to load
+2023-02-26 19:22:06,157 :INFO : test_flightBooking :Tool-tip encountered and closed
+2023-02-26 19:22:09,515 :INFO : test_flightBooking :No alt id detected
+2023-02-26 19:22:16,264 :INFO : test_flightBooking :No alt id detected
+2023-02-26 19:22:20,358 :INFO : test_flightBooking :Closing upgrade offer
+2023-02-26 19:22:26,555 :INFO : test_flightBooking :Entering firstname/lastname
+2023-02-26 19:22:26,761 :INFO : test_flightBooking :Entering month/day/year
+2023-02-26 21:27:21,444 :INFO : test_flightBooking :Cookie warning encountered and closed
+2023-02-26 21:27:27,822 :INFO : test_flightBooking :Waiting for page to load
+2023-02-26 21:27:58,378 :INFO : test_flightBooking :No tool-tip encountered
+2023-02-26 21:28:08,513 :INFO : test_flightBooking :Alt CSS id detected
+2023-02-26 21:28:19,702 :INFO : test_flightBooking :Alt CSS id detected
+2023-02-26 21:28:30,726 :INFO : test_flightBooking :Nothing to close
+2023-02-26 21:32:53,962 :INFO : test_flightBooking :Cookie warning encountered and closed
+2023-02-26 21:33:00,398 :INFO : test_flightBooking :Waiting for page to load
+2023-02-26 21:33:27,351 :INFO : test_flightBooking :Tool-tip encountered and closed
+2023-02-26 21:33:30,683 :INFO : test_flightBooking :No alt id detected
+2023-02-26 21:33:37,899 :INFO : test_flightBooking :No alt id detected
+2023-02-26 21:33:42,001 :INFO : test_flightBooking :Closing upgrade offer
+2023-02-26 21:33:47,057 :INFO : test_flightBooking :Entering firstname/lastname
+2023-02-26 21:33:47,174 :INFO : test_flightBooking :Entering month/day/year

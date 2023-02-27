@@ -37,8 +37,9 @@ class TestAA(BaseClass):
         time.sleep(1)
         wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@id='flightSearchForm.button.reSubmit']")))
         selectFlightPage = flightFinderPage.selectFlight()
-        # checks to see if the page is taking extra time to load
         time.sleep(3)
+
+        # checks to see if the page is taking extra time to load
         try:
             elem = self.driver.find_element(By.CSS_SELECTOR, "#sec-text-container")
             if elem.is_displayed():
@@ -47,6 +48,7 @@ class TestAA(BaseClass):
 
         except NoSuchElementException:
             log.info("Page loading normally")
+
         # closes tool-tip/info pop-up so as not to block available flights to click
         try:
             elem = self.driver.find_element(By.XPATH, "(//button[@id='closeTooltip'])[1]")
@@ -82,10 +84,18 @@ class TestAA(BaseClass):
         except NoSuchElementException:
             self.driver.find_element(By.CSS_SELECTOR, "#flight0-product0").click()
             log.info("Alt CSS id detected")
+        time.sleep(4)
 
-        time.sleep(2)
-        wait.until(EC.element_to_be_clickable(selectFlightPage.statusPref()))
-        selectFlightPage.statusPref().click()
+        # closes flight upgrade pop up when it appears after selecting return flight
+        try:
+            elem = selectFlightPage.statusPref()
+            if elem.is_displayed():
+                elem.click()  # this will click the element if it is there
+                log.info("Closing upgrade offer")
+
+        except NoSuchElementException:
+            self.driver.find_element(By.CSS_SELECTOR, ".icon-close").click()
+            log.info("Alt close option detected")
 
         time.sleep(3)
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
