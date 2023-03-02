@@ -97,9 +97,10 @@ class TestAA(BaseClass):
             self.driver.find_element(By.CSS_SELECTOR, ".icon-close").click()
             log.info("Alt close option detected")
 
-        time.sleep(3)
+        time.sleep(2)
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#button_continue_guest")))
+        time.sleep(2)
+        #wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#button_continue_guest")))
         bookFlight = selectFlightPage.guestLogin()
 
         # Booking flight by entering passenger information
@@ -112,19 +113,23 @@ class TestAA(BaseClass):
         bookFlight.monthDropdown().select_by_index(2)  # selects 'February'
         bookFlight.dayDropdown().select_by_index(28)   # selects '28'
         bookFlight.yearDropdown().select_by_index(32)  # selects '1992'
+        time.sleep(2)
         bookFlight.genderDropdown().select_by_index(0) # selects 'Male'
+        time.sleep(2)
         bookFlight.regionDropdown().select_by_index(0) # selects 'US'
         time.sleep(1.5)
+        self.takeScreenshot()
         self.scrollDown()
         wait.until(EC.element_to_be_clickable(bookFlight.getEmail()))
         bookFlight.getEmail().send_keys(getData["email"])
         bookFlight.confEmail().send_keys(getData["email"])
-        bookFlight.codeDropdown().select_by_index(1)   # selects 'United States +1'
-        #self.takeScreenshot()
+        bookFlight.codeDropdown().select_by_index(1)  # selects 'United States +1'
         bookFlight.phoneNum().send_keys(getData["phone_num"])
         self.scrollDown()
         time.sleep(1)
-        bookFlight.passengerButton().click()
+        confirmSeat = bookFlight.passengerButton()
+        wait.until(EC.element_to_be_clickable(confirmSeat.skipSeating()))
+        confirmSeat.skipSeating().click()
 
 
 

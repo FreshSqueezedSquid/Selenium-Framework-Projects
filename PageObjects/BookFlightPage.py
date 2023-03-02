@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
+from PageObjects.ConfirmSeatPage import ConfirmSeat
 
 
 class BookFlight:
@@ -57,4 +58,6 @@ class BookFlight:
         return self.driver.find_element(*BookFlight.phone_num)
 
     def passengerButton(self):
-        return self.driver.find_element(*BookFlight.passenger_button)
+        self.driver.find_element(*BookFlight.passenger_button).click()
+        confirmSeat = ConfirmSeat(self.driver)
+        return confirmSeat
