@@ -27,6 +27,4 @@ class SelectFlight:
         return self.driver.find_element(*SelectFlight.status_pref)
 
     def guestLogin(self):
-        self.driver.find_element(*SelectFlight.guest_login).click()
-        bookFlight = BookFlight(self.driver)
-        return bookFlight
+        return self.driver.find_element(*SelectFlight.guest_login)

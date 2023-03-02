@@ -3,6 +3,8 @@ import pytest
 from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
+
+from PageObjects.BookFlightPage import BookFlight
 from PageObjects.FlightFinderPage import FlightFinder
 from TestData.TripData import TripData
 from utilities.BaseClass import BaseClass
@@ -99,10 +101,20 @@ class TestAA(BaseClass):
 
         time.sleep(2)
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(2)
-        #wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#button_continue_guest")))
-        bookFlight = selectFlightPage.guestLogin()
+        time.sleep(1)
 
+        # checks for alternate tags for the continue button on this page
+        try:
+            elem = selectFlightPage.guestLogin()
+            if elem.is_displayed():
+                elem.click()  # this will click the element if it is there
+                log.info("Going to guest checkout")
+
+        except NoSuchElementException:
+            self.driver.find_element(By.CSS_SELECTOR, "#button_continue_guest").click()
+            log.info("Alt guest button detected")
+
+        bookFlight = BookFlight(self.driver)
         # Booking flight by entering passenger information
         self.scrollDown()
         log.info("Entering firstname/lastname")
@@ -111,25 +123,34 @@ class TestAA(BaseClass):
         self.scrollDown()
         log.info("Entering month/day/year")
         bookFlight.monthDropdown().select_by_index(2)  # selects 'February'
-        bookFlight.dayDropdown().select_by_index(28)   # selects '28'
+        bookFlight.dayDropdown().select_by_index(28)   # selects '28'œ
         bookFlight.yearDropdown().select_by_index(32)  # selects '1992'
         time.sleep(2)
-        bookFlight.genderDropdown().select_by_index(0) # selects 'Male'
-        time.sleep(2)
-        bookFlight.regionDropdown().select_by_index(0) # selects 'US'
+
+        bookFlight.genderDropdown().select_by_index(1) # selects 'Male'
+        bookFlight.regionDropdown().select_by_index(1) # selects 'US'
         time.sleep(1.5)
+        wait.until(EC.element_to_be_clickable((By.XPATH, "//select[@id='passengers0.residencyInfo.state']")))
+        bookFlight.stateDropdown().select_by_index(3)  # selects 'Arizona'
+
         self.takeScreenshot()
         self.scrollDown()
+
         wait.until(EC.element_to_be_clickable(bookFlight.getEmail()))
         bookFlight.getEmail().send_keys(getData["email"])
         bookFlight.confEmail().send_keys(getData["email"])
         bookFlight.codeDropdown().select_by_index(1)  # selects 'United States +1'
         bookFlight.phoneNum().send_keys(getData["phone_num"])
+
         self.scrollDown()
         time.sleep(1)
+
         confirmSeat = bookFlight.passengerButton()
+
+        time.sleep(2)
         wait.until(EC.element_to_be_clickable(confirmSeat.skipSeating()))
         confirmSeat.skipSeating().click()
+        self.takeScreenshot()
 
 
 
