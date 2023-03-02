@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
 
-from PageObjects.BookFlightPage import BookFlight
 
 
 class SelectFlight:
@@ -12,7 +11,7 @@ class SelectFlight:
     lowest_return_fare = (By.XPATH, "(//button[@id='slice1Flight1MainCabin'])[1]")
     close_popup = (By.CSS_SELECTOR, ".icon-close.icon-medium")
     status_pref = (By.CSS_SELECTOR, "#mainCabinUpsellDialogClose")
-    guest_login = (By.CSS_SELECTOR, "#button_continue_guest")
+    guest_login = (By.CSS_SELECTOR, "#continue-as-guest-btn")
 
     def lowestDepartPrice(self):
         return self.driver.find_element(*SelectFlight.lowest_depart_fare)

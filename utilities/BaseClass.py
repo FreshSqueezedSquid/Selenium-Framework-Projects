@@ -11,15 +11,15 @@ from selenium.webdriver.support.wait import WebDriverWait
 @pytest.mark.usefixtures("setup")
 class BaseClass:
 
-    def scrollUp(self):
-        self.driver.execute_script("window.scrollTo(0, document.body.scrollTop);")
-
+    # Scrolls page down incrementally so that we can view all inputs
     def scrollDown(self):
         self.driver.execute_script("window.scrollTo(0, 300);")
 
+    # Allows a screenshot to be taken at any point in the booking process to help troubleshoot what is going wrong
     def takeScreenshot(self):
         self.driver.save_screenshot('screenshot.png')
 
+    # Creates a log of testing events
     def getLog(self):
         loggerName = inspect.stack()[1][3]  # Gets the name of the class / method from where this method is called
         logger = logging.getLogger(loggerName)

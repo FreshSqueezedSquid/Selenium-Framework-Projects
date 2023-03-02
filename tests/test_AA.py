@@ -3,7 +3,6 @@ import pytest
 from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-
 from PageObjects.BookFlightPage import BookFlight
 from PageObjects.FlightFinderPage import FlightFinder
 from TestData.TripData import TripData
@@ -20,6 +19,7 @@ class TestAA(BaseClass):
 
         flightFinderPage = FlightFinder(self.driver)
         time.sleep(3)
+
         # closes cookie warning banner so as not to block any inputs
         try:
             elem = self.driver.find_element(By.XPATH, "//button[@name='closeBannerButton']")
@@ -29,6 +29,7 @@ class TestAA(BaseClass):
         except NoSuchElementException:
             log.info("No warning encountered")
 
+        # Entering trip data from getData to search for available flights
         wait.until(EC.element_to_be_clickable(flightFinderPage.getDestination()))
         flightFinderPage.getDestination().send_keys(getData["destination"])
         wait.until(EC.element_to_be_clickable(flightFinderPage.departDate()))
@@ -38,6 +39,7 @@ class TestAA(BaseClass):
         flightFinderPage.returnDate().send_keys(getData["return_date"])
         time.sleep(1)
         wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@id='flightSearchForm.button.reSubmit']")))
+        # Switching driver to flight selection page
         selectFlightPage = flightFinderPage.selectFlight()
         time.sleep(3)
 
@@ -114,8 +116,8 @@ class TestAA(BaseClass):
             self.driver.find_element(By.CSS_SELECTOR, "#button_continue_guest").click()
             log.info("Alt guest button detected")
 
-        bookFlight = BookFlight(self.driver)
         # Booking flight by entering passenger information
+        bookFlight = BookFlight(self.driver)
         self.scrollDown()
         log.info("Entering firstname/lastname")
         bookFlight.firstName().send_keys(getData["firstname"])
@@ -123,20 +125,21 @@ class TestAA(BaseClass):
         self.scrollDown()
         log.info("Entering month/day/year")
         bookFlight.monthDropdown().select_by_index(2)  # selects 'February'
-        bookFlight.dayDropdown().select_by_index(28)   # selects '28'œ
+        bookFlight.dayDropdown().select_by_index(28)   # selects '28'
         bookFlight.yearDropdown().select_by_index(32)  # selects '1992'
         time.sleep(2)
-
+        log.info("Entering gender")
         bookFlight.genderDropdown().select_by_index(1) # selects 'Male'
+        log.info("Entering Country/State")
         bookFlight.regionDropdown().select_by_index(1) # selects 'US'
-        time.sleep(1.5)
         wait.until(EC.element_to_be_clickable((By.XPATH, "//select[@id='passengers0.residencyInfo.state']")))
+        time.sleep(2.5)
         bookFlight.stateDropdown().select_by_index(3)  # selects 'Arizona'
 
-        self.takeScreenshot()
         self.scrollDown()
-
         wait.until(EC.element_to_be_clickable(bookFlight.getEmail()))
+
+        # Entering email/phone number
         bookFlight.getEmail().send_keys(getData["email"])
         bookFlight.confEmail().send_keys(getData["email"])
         bookFlight.codeDropdown().select_by_index(1)  # selects 'United States +1'
@@ -145,6 +148,7 @@ class TestAA(BaseClass):
         self.scrollDown()
         time.sleep(1)
 
+        # Changes driver to seat confirmation page
         confirmSeat = bookFlight.passengerButton()
 
         time.sleep(2)
